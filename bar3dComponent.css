@@ -1,0 +1,58 @@
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.bar3d-list{
+			margin-top:0px;
+		}
+		.bar3d-list-item{
+			float: left;
+			margin-left: 30px;
+			list-style: none;
+			/*width: 30px;*/
+			width: 20px;
+			margin:0px 20px;
+		}
+		.bar3d-list-item-graphic{
+			height: calc(100% - 80px);
+			transform: translateY(40px);
+		}
+		.bar3d-list-item-graphic>div{
+			transition: all 2s;
+		}
+		.bar3d-list-item-graphic>div:nth-child(1){
+			/*background-color: rgba(76, 149, 240, 0.8);*/
+			background-color: #17a2e2;
+		}
+		.bar3d-list-item-graphic>div>div:nth-child(2){
+			/*background-color: rgba(33, 114, 215, 0.8);*/
+			background-color: #0485c1;
+			/*transform: skew(0deg,-45deg) translate(30px,23px);*/
+			transform: skew(0deg,-45deg) translate(20px,15px);
+		}
+		.bar3d-list-item-graphic>div>div:nth-child(3){
+			width: 20px;
+			height: 10px;
+			/*transform:skew(-45deg,0deg) translate(-7.5px,-15px);*/
+			transform:skew(-45deg,0deg) translate(-4.5px,-10px);
+			/*background-color: rgba(162, 199, 245, 0.8);*/
+			background-color: #39c1ff;
+		}
+		.bar3d-list-item-value{
+			top: 5px;
+			height: 40px;
+			line-height: 40px;
+			color: #ffffff;
+			font-size: 10px;
+		}
+		.bar3d-list-item-label{
+			bottom: 5px;
+			height: 40px;
+			line-height: 40px;
+			font-size: 12px;
+			color: #adadad;
+		}
+		.bar3d-axis-label{
+			color: #ffffff;
+			font-size: 10px;
+		}

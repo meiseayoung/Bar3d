@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./bar3dComponent.css">
+	<script src="./d3.v4.js"></script>
+	<script src="./echarts.min.js"></script>
+	<script src="./jquery-1.11.1.min.js"></script>
+	<script src="./Bar3d.js"></script>
+</head>
+<body style="background-color: #0d1939;">
+	<div style="position: relative;height: 300px;width: 220px;" id="t1">			
+		</div> -->
+		<div class="bar3d-bg-chart" style="position: absolute;width: 100%;height: 100%;z-index: 1"></div>
+		<div class="bar3d" style="height: 300px;width: 220px;position: absolute;left:20px;">
+		</div>
+	</div>
+
+	<script>
+		var bar3d_1 = new Bar3d({
+			renderTo:"#t1",
+			margin:12,
+			barData:[10,20,30,80,20]
+		}) 
+	</script>
+</body>
+</html>
